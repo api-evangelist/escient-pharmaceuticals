@@ -1,8 +1,25 @@
 aid: escient-pharmaceuticals
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/escient-pharmaceuticals.png
 name: Escient Pharmaceuticals
-description: 'Escient Pharmaceuticals is a company surfaced as a portfolio company of nea and added to
-  the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Escient Pharmaceuticals is a San Diego, California clinical-stage biopharmaceutical company
+  developing first-in-class, oral small-molecule therapeutics targeting Mas-related G protein-coupled receptors
+  (MRGPRs) along the neurosensory-inflammatory axis. Its lead programs are EP262, an MRGPRX2 antagonist for
+  mast-cell-mediated diseases such as chronic spontaneous and inducible urticaria and atopic dermatitis, and
+  EP547, an MRGPRX4 antagonist for cholestatic and uremic pruritus. The company was backed by New Enterprise
+  Associates (NEA) and was acquired by Incyte Corporation on May 30, 2024. Escient operates a corporate
+  marketing website only and publishes no public API, developer program, or machine-readable API specification;
+  this profile captures its identity and domain-security posture for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/escient-pharmaceuticals/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Life Sciences
+- Pharmaceuticals
+- Biotechnology
+- Clinical Stage
+- Drug Discovery
+- Immunology
+- Dermatology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/escient-pharmaceuticals-domain-security.yml
 - type: Website
   url: https://www.escientpharma.com
+- type: Blog
+  url: https://www.escientpharma.com/news/
+- type: Support
+  url: https://www.escientpharma.com/contact/
+- type: PrivacyPolicy
+  url: https://www.escientpharma.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.escientpharma.com/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
